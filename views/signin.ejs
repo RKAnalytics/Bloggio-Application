@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <%- include('./Partials/head') %>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Bloggio</title>
+  </head>
+  <body>
+    <%- include('./Partials/navbar') %>
+    <form action="/user/signin" method="post">
+      <div class="container mt-4">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input
+          type="email"
+          name="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
+      </div>
+      <div class="container mt-4">
+        <label for="exampleInputEmail1" class="form-label">Password</label>
+        <input
+          type="password"
+          name="pass"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
+      </div>
+      <div class="container mt-4">
+        <button type="submit" class="btn btn-primary" style="margin: 12px">
+          Submit
+        </button>
+      </div>
+    </form>
+    <%- include('./Partials/script') %>
+  </body>
+</html>
